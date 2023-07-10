@@ -9,7 +9,7 @@ export default function Home(props){
     {
         return(
             <>
-            <img className={ `z-[-10] absolute outlin h-full w-full object-contain object-bottom`} alt="missing" src={image2}/>
+            <img className={ `z-[-10] fixed outlin h-full w-full object-contain object-bottom`} alt="missing" src={image2}/>
             <div className='h-full w-full flex justify-center'>
                 <div className='outlin mt-40'>
                     <div>

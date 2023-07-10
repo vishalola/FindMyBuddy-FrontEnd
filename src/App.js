@@ -56,7 +56,7 @@ function App() {
   },[])
 
   return (
-    <div className="relative h-[99vh]">
+    <div className="relative h-[100vh]">
 
         <NavBar isLogged={log} setLog={setLog} />
         <Routes>
