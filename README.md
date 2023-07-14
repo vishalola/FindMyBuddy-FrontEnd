@@ -1,70 +1,46 @@
-# Getting Started with Create React App
+# FindMyBuddy
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+FindMyBuddy is a web application that allows users to connect with their lost old friends from their school days. By registering and providing their details and school information, users can find and reconnect with fellow schoolmates who have also registered on the platform. This project was developed by Vishal Ola and Sahil Yadav.
 
-## Available Scripts
+## Features
 
-In the project directory, you can run:
+- User Registration: Users can create an account by providing their personal details and school information.
+- School-based Connections: Upon registration, users can view a list of other registered users who attended the same school.
+- Contact Details: Users can access the contact details of fellow schoolmates, allowing them to initiate communication.
+- User Profile: Each user has a profile page where they can update their personal information and manage their account settings.
 
-### `npm start`
+## Technologies Used
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- Frontend: The frontend of FindMyBuddy is built using React.js with Material UI and Tailwind CSS, providing an intuitive and visually appealing user interface.
+- Backend: The backend is powered by Express.js, a flexible Node.js web application framework. The data is stored in a MongoDB database.
+- Deployment: The server is hosted on Render, providing a reliable hosting solution, while the frontend is hosted on Vercel, ensuring fast and efficient delivery of the user interface.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Installation
 
-### `npm test`
+To set up the FindMyBuddy project locally, follow these steps:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+1. Clone the repository: `git clone <repository-url>`
+2. Navigate to the project directory: `cd findmybuddy`
+3. Install the dependencies: `npm install`
+4. Start the development server: `npm start`
 
-### `npm run build`
+Make sure you have Node.js and MongoDB installed on your machine before proceeding with the installation.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Contributing
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+We welcome contributions to the FindMyBuddy project. To contribute, follow these steps:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+1. Fork the repository
+2. Create a new branch: `git checkout -b my-new-feature`
+3. Make changes and commit them: `git commit -am 'Add some feature'`
+4. Push the branch to your forked repository: `git push origin my-new-feature`
+5. Submit a pull request detailing your changes.
 
-### `npm run eject`
+Please ensure your code follows the project's coding style and includes appropriate documentation.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Contact
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+For any inquiries or feedback, please contact at Vishal Ola [vishalola555@gmail.com] or Sahil Yadav at [sy3179925@gmail.com].
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Thank you for using FindMyBuddy! We hope you enjoy reconnecting with your old friends.
