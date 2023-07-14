@@ -65,7 +65,7 @@ export default function Login(props){
         <div className="h-[100vh] flex justify-center items-center">
             <img className={ `z-[-10] fixed outlin h-[200px] object-cover bottom-0`} alt="missing" src={image}/>
             
-            <div className="outlin shadow-2xl  border-b-[4px] border-b-blue-700  w-[400px]">
+            <div className="outlin bg-white shadow-2xl  border-b-[4px] border-b-blue-700  w-[400px]">
                 <div className="
                 p-3 text-4xl
                 outlin flex mt-8 mb-4 font-light text-blue-700  items-center justify-center">
