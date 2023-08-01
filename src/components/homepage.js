@@ -9,6 +9,7 @@ export default function Home(props){
     const [imageLoaded,setImageLoaded]=useState(false);
     if(window.outerWidth<=650)
     {
+        // for small screens, (could've used conditional operator in css instead of two seperate if statements but okie ;) )
         return(
             <>
             <img

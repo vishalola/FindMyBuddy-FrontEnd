@@ -22,11 +22,13 @@ export default function SignUp(){
         let confirmPass=e.target[10].value
         if(password!==confirmPass)
         {
+            // password didn't match with confirmPassword;
             setPassCheck(true)
             setLoading(false);
         }
         else
         {
+            // password matched
             setPassCheck(false);
             axios.post("https://findmybuddy-backend.onrender.com/addUser",{
                 "name":name,
@@ -39,18 +41,16 @@ export default function SignUp(){
                 let check=res.data;
                 if(check)
                 {
+                    // user credentials added to database.
                     navigate("/login")
                 }
                 else
                 {
-                    // UserName already exists
+                    // User already exists
                     setUserCheck(true);
                 }
             })
         }
-        
-    
-        //Send this username, password to server.
 
     }
     return (

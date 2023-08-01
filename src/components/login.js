@@ -4,17 +4,16 @@ import axios from 'axios';
 import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import image from '../assets/buddy.svg'
-// import { useState } from 'react'
 export default function Login(props){
+
     const [passCheck,setPassCheck]=useState(true);
     const [userCheck,setUserCheck]=useState(true);
     const [load,setLoading]=useState(false);
     const navigate=useNavigate();
     function setLoggedInCookie() {
-        // Set the cookie expiration to a future date (e.g., 30 days)
+        // setting up cookie in browser for 30 dates from time of log in 
         const expiryDate = new Date();
         expiryDate.setDate(expiryDate.getDate() + 30);
-      
         document.cookie = `isLoggedIn=true; expires=${expiryDate.toUTCString()}; path=/`;
       }
     let handleClick=(e)=>{
@@ -22,6 +21,8 @@ export default function Login(props){
         e.preventDefault();
         let username=e.target[0].value
         let password=e.target[2].value
+        
+        // verifying from server if user exists: 
         axios.post("https://findmybuddy-backend.onrender.com/login",{
             "username":username,
             "password":password
@@ -32,7 +33,7 @@ export default function Login(props){
             {
                 if(data.match)
                 {
-                    // Password Match
+                    //User data and  Password Match ,  then get user details and redirect to profile page.
                     axios.post("https://findmybuddy-backend.onrender.com/userDetail",{
                         "username":username
                     }).then(res=>{

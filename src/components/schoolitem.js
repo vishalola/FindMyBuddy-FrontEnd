@@ -3,6 +3,7 @@ import BuddyItem from "./buddyitem"
 export default function SchoolItem(props){
 
     let handleClick=()=>{
+        // Get data of all students who study in this school from server.
         axios.post("https://findmybuddy-backend.onrender.com/getBuddy",{
             "school":props.name
         }).then(res=>{
@@ -10,6 +11,7 @@ export default function SchoolItem(props){
             props.setBuddyList([]);
             for(let i=0;i<data.length;i++)
             {
+                // skip the current user and add the rest to friends list.
                 if(data[i].userName!==props.username)
                 props.setBuddyList(list=>[...list,
                     <BuddyItem 

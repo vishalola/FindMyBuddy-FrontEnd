@@ -9,14 +9,15 @@ import { useEffect, useState } from 'react';
 import axios from 'axios';
 function App() {
 
+  // states for user data
   const [log,setLog]=useState(false);
   const [name,setName]=useState('');
   const [username,setUserName]=useState('');
-
   const [email,setEmail]=useState('');
   const [number,setNumber]=useState('');
 
   function checkLoggedIn() {
+    // checking if user already logged in using browser cookies.
     const cookies = document.cookie.split(';');
   
     for (const cookie of cookies) {
@@ -25,7 +26,6 @@ function App() {
         return true;
       }
     }
-  
     return false;
   }
   useEffect(()=>{
@@ -57,7 +57,6 @@ function App() {
 
   return (
     <div className="relative h-[100vh]">
-
         <NavBar isLogged={log} setLog={setLog} />
         <Routes>
           <Route path="/" element={<Home isLogged={log}/>}/>

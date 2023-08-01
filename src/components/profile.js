@@ -11,6 +11,7 @@ export default function Profile(props){
     const [loading,setLoading]=useState(true);
     const [schoolLoad,setSchoolLoading]=useState(false);
 
+    // states for Contact Card, to be passed onto school_item and then buddy_item.
     const [showContact,setContact]=useState(false);
     const [c_name,setC_Name]=useState('Sahil Yadav');
     const [c_username,setC_Username]=useState('ysahil');
@@ -23,7 +24,7 @@ export default function Profile(props){
         { title: "St. Xavier's School, Behror", year: 1994 },
         { title: "Sachdeva Millenium School", year: 1972 },
         { title: "Gyan Mata Vidya Vihar Sen. Sec. School, Nanded", year: 1974 },
-        
+        // more items can be added.
       ];
 
       useEffect(()=>{
@@ -50,6 +51,7 @@ export default function Profile(props){
         if(selectedSchool.length!==0)
         {
             let exists=false;
+            // to check if the school to be added already exists in the list.
             for(let i=0;i<schoollist.length;i++)
             {
                 if(schoollist[i].props.name===selectedSchool)
@@ -73,6 +75,7 @@ export default function Profile(props){
       
     if(props.isLogged===false)
     {
+        // not logged in screen.
         return(
             <div className="h-full w-full flex justify-center items-center">
             <img className={ `z-[-10] fixed outlin h-full w-full object-cover object-bottom`} alt="missing" src={window.outerWidth<=650?image2:image}/>
