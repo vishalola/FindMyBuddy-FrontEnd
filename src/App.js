@@ -42,7 +42,7 @@ function App() {
             break;
         }
       }
-      axios.post("https://findmybuddy-backend.onrender.com/userDetail",{
+      axios.post("https://pdzpip9igu.ap-southeast-1.awsapprunner.com/userDetail",{
         "username":username
       }).then(res=>{
         let details=res.data;
