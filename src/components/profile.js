@@ -31,7 +31,7 @@ export default function Profile(props){
 
         if(props.isLogged===true)
         {
-            axios.post("https://findmybuddy-backend.onrender.com/getSchool",{
+            axios.post("https://pdzpip9igu.ap-southeast-1.awsapprunner.com/getSchool",{
                 "username":props.username
             }).then(res=>{
                 setLoading(false);
@@ -61,7 +61,7 @@ export default function Profile(props){
             }
             if(!exists)
             {
-                axios.post("https://findmybuddy-backend.onrender.com/addSchool",{
+                axios.post("https://pdzpip9igu.ap-southeast-1.awsapprunner.com/addSchool",{
                     "username":props.username,
                     "school":selectedSchool
                 }).then(()=>{
