@@ -23,7 +23,7 @@ export default function Login(props){
         let password=e.target[2].value
         
         // verifying from server if user exists: 
-        axios.post("https://findmybuddy-backend.onrender.com/login",{
+        axios.post("https://pdzpip9igu.ap-southeast-1.awsapprunner.com/login",{
             "username":username,
             "password":password
         }).then(res=>{
@@ -34,7 +34,7 @@ export default function Login(props){
                 if(data.match)
                 {
                     //User data and  Password Match ,  then get user details and redirect to profile page.
-                    axios.post("https://findmybuddy-backend.onrender.com/userDetail",{
+                    axios.post("https://pdzpip9igu.ap-southeast-1.awsapprunner.com/userDetail",{
                         "username":username
                     }).then(res=>{
                         let details=res.data;
