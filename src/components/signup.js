@@ -30,7 +30,7 @@ export default function SignUp(){
         {
             // password matched
             setPassCheck(false);
-            axios.post("https://findmybuddy-backend.onrender.com/addUser",{
+            axios.post("https://pdzpip9igu.ap-southeast-1.awsapprunner.com/addUser",{
                 "name":name,
                 "username":username,
                 "email":email,
