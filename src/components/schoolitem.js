@@ -4,7 +4,7 @@ export default function SchoolItem(props){
 
     let handleClick=()=>{
         // Get data of all students who study in this school from server.
-        axios.post("https://pdzpip9igu.ap-southeast-1.awsapprunner.com/getBuddy",{
+        axios.post("https://findmybuddy-backend.onrender.com/getBuddy",{
             "school":props.name
         }).then(res=>{
             let data=res.data
