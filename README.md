@@ -44,3 +44,10 @@ Please ensure your code follows the project's coding style and includes appropri
 For any inquiries or feedback, please contact at Vishal Ola [vishalola555@gmail.com] or Sahil Yadav at [sy3179925@gmail.com].
 
 Thank you for using FindMyBuddy! We hope you enjoy reconnecting with your old friends.
+
+## Screenshots
+<img width="1440" alt="Screenshot 2023-11-07 at 11 41 44 PM" src="https://github.com/vishalola/Pravah_FrontEnd/assets/98338637/813daeda-3a0b-4db9-862b-17d9feb02f47">
+<img width="1440" alt="Screenshot 2023-11-07 at 11 42 02 PM" src="https://github.com/vishalola/Pravah_FrontEnd/assets/98338637/2513705a-308d-4966-b9c1-1912f72fd231">
+<img width="1440" alt="Screenshot 2023-11-07 at 11 42 09 PM" src="https://github.com/vishalola/Pravah_FrontEnd/assets/98338637/43cad82b-c823-4b3a-be77-1a273f312700">
+<img width="1440" alt="Screenshot 2023-11-07 at 11 42 59 PM" src="https://github.com/vishalola/Pravah_FrontEnd/assets/98338637/16e83548-0e47-4751-adf7-5384d52e751d">
+
